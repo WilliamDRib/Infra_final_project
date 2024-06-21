@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Password</title>
+
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="script.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<label for="password">Password:</label>
+		<input type="text" id="password" readonly>
+		<button onclick="copy()" >Copy</button>
+		<br>
+		<label for="numbers"><input type="checkbox" id="letters">Letters</label>
+		<br>
+		<label for="numbers"><input type="checkbox" id="numbers">Numbers</label>
+		<br>
+		<label for="especial"><input type="checkbox" id="especial">Especial</label>
+		<br>
+		<label for="uppercase"><input type="checkbox" id="uppercase">Uppercase</label>
+		<br>
+		<label for="size">Size:</label>
+		<input type="number" id="size" min="0" value="8" />
+		<br><br>
+
+		<button onclick="randomPassword()">Generate password</button>
+
+	</div>
+
+</body>
+
+</html>
