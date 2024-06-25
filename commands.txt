@@ -1,0 +1,4 @@
+#Remove all imgs/containers
+docker rm -f $(docker ps -aq) && docker rmi -f $(docker images -q)
+
+ansible-playbook ansible/playbook.yml
